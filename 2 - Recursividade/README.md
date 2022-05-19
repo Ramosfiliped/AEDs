@@ -29,7 +29,7 @@ Para cada chamada de função, recursiva ou não, os parâmetros são e as vari�
 Internamente, quando a função é chamada, é criado um **Registro de ativação** na pilha de execução do programa. Esse registro armazena os parâmetros e as variáveis locais, bem como o ponto de retorno da função.
 
 Ao final da execução desse função o registro é desempilhado e a execução volta ao subprograma que chamou a função.
-<img src="./imgs/fib1.svg" alt="1° Exemplo de Fibonacci" width="400"/>
+<img src="./imgs/fib1.svg" alt="1° Exemplo de Fibonacci" width="400"/>      
 <img src="./imgs/fib2.svg" alt="2° Exemplo de Fibonacci" width="400"/>
 
 *Qual a diferença entre as duas execuções acima?*  
