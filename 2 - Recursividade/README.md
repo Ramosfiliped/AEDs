@@ -1,4 +1,13 @@
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+---
+layout: post
+title: Recursividade
+author: Filipe Ramos
+tag:
+  - equacoes
+  - LaTeX
+mathjax: true
+---
 # Recursividade
 
 ##Conceito
