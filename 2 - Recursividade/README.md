@@ -5,6 +5,10 @@
 - [2. Dividir para Conquistar](#2-dividir-para-conquistar)
 - [3. Análise de Complexidade](#3-análise-de-complexidade)
 - [4. Conclusão](#4-conclusão)
+- [5. Exercícios](#5-exercícios)
+  - [1. String Reversa](#1-string-reversa)
+  - [2. Fatorial](#2-fatorial)
+  - [3. Par e Ímpar](#3-par-e-ímpar)
 
 
 # 1. Introdução
@@ -30,7 +34,7 @@ Para cada chamada de função, recursiva ou não, os parâmetros são e as vari�
 Internamente, quando a função é chamada, é criado um **Registro de ativação** na pilha de execução do programa. Esse registro armazena os parâmetros e as variáveis locais, bem como o ponto de retorno da função.
 
 Ao final da execução desse função o registro é desempilhado e a execução volta ao subprograma que chamou a função.
-<img src="./imgs/fib1.svg" alt="1° Exemplo de Fibonacci" width="400"/> 
+<img src="./imgs/fib1.svg" alt="1° Exemplo de Fibonacci" width="400"/>
 <img src="./imgs/fibIterativo.svg" alt="2° Exemplo de Fibonacci" width="400"/>
 
 *Qual a diferença entre as duas execuções acima?*  
@@ -47,3 +51,22 @@ A ideia desta técnica é fazer duas chamadas recursivas, cada uma resolvendo me
 Então podemos concluir que a recursividade nem sempre é a melhor solução, pois seu custo de espaço pode ser elevado em determinadas instâncias.
 Outra coisa que podemos concluir é que, todo algoritmo recursivo tem uma versão não recursiva (ou iterativa).
 A recursividade vale a pena quando o algoritmo é muito complexo e normalmente requer o uso direto de pilha.
+
+# 5. Exercícios
+A ideia destes exercícios é treinar recursividade, então mesmo que soluções iterativas sejam mais eficiêntes, resolva-os utilizando recursão.
+## 1. String Reversa  
+Escreva um algoritmo que, dado uma String s como entrada, retorne a mesma String ao contrário.  
+Ex.: **Input:** recursividade  
+     **Output:** edadivisrucer
+
+## 2. Fatorial
+Escreva um algoritmo que dado um inteiro n de entrada, retorne o fatorial de n.  
+Ex.: **Input:** 5  
+     **Output:** 120
+
+## 3. Par e Ímpar
+Escreva um algoritmo que, dado um inteiro n de entrada, printa os números pares e ímpares de 1:n.  
+Ex.: **Input:** 10   
+     **Output:**  
+     Pares: 2 4 6 8 10  
+     Ímpares: 1 3 5 7 9
