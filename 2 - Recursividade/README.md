@@ -4,6 +4,7 @@
   - [1.1 Consumo de Memória](#11-consumo-de-memória)
 - [2. Dividir para Conquistar](#2-dividir-para-conquistar)
 - [3. Análise de Complexidade](#3-análise-de-complexidade)
+- [4. Conclusão](#4-conclusão)
 
 
 # 1. Introdução
@@ -29,14 +30,20 @@ Para cada chamada de função, recursiva ou não, os parâmetros são e as vari�
 Internamente, quando a função é chamada, é criado um **Registro de ativação** na pilha de execução do programa. Esse registro armazena os parâmetros e as variáveis locais, bem como o ponto de retorno da função.
 
 Ao final da execução desse função o registro é desempilhado e a execução volta ao subprograma que chamou a função.
-<img src="./imgs/fib1.svg" alt="1° Exemplo de Fibonacci" width="400"/>      
-<img src="./imgs/fib2.svg" alt="2° Exemplo de Fibonacci" width="400"/>
+<img src="./imgs/fib1.svg" alt="1° Exemplo de Fibonacci" width="400"/> 
+<img src="./imgs/fibIterativo.svg" alt="2° Exemplo de Fibonacci" width="400"/>
 
 *Qual a diferença entre as duas execuções acima?*  
-A complexidade de tempo em fibonacci recursivo é **_O(n_)**, como veremos na seção de Análise de Complexidade. Mas a complexidade de espaço também é **_O(n)_** devido a pilha de execução.
-
-
+A complexidade de tempo em fibonacci recursivo é **_O(n)_**, como veremos na seção de Análise de Complexidade. Mas a complexidade de espaço também é **_O(n)_** devido a pilha de execução.  
+Já a versão iterativa também tem complexidade **_O(n)_** em tempo, porém é **_O(1)_** em espaço, já que a pilha de execução só chama a função uma única vez.
 
 # 2. Dividir para Conquistar
+Como o próprio nome diz, dividir para conquistar é uma técnica para resolver problemas em programação que consiste em quebrar o problema em sub problemas menores e mais fáceis de resolver.
+A ideia desta técnica é fazer duas chamadas recursivas, cada uma resolvendo metade do problema. Esta técnica é muito utilizado na prática em algoritmos complexos (MergeSort, QuickSort...) de ordenação.
 
 # 3. Análise de Complexidade
+
+# 4. Conclusão
+Então podemos concluir que a recursividade nem sempre é a melhor solução, pois seu custo de espaço pode ser elevado em determinadas instâncias.
+Outra coisa que podemos concluir é que, todo algoritmo recursivo tem uma versão não recursiva (ou iterativa).
+A recursividade vale a pena quando o algoritmo é muito complexo e normalmente requer o uso direto de pilha.
