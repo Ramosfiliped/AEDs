@@ -55,7 +55,7 @@ A recursividade vale a pena quando o algoritmo é muito complexo e normalmente r
 # 5. Exercícios
 A ideia destes exercícios é treinar recursividade, então mesmo que soluções iterativas sejam mais eficiêntes, resolva-os utilizando recursão.
 ## 1. String Reversa  
-Escreva um algoritmo que, dado uma String s como entrada, retorne a mesma String ao contrário.  
+Escreva um algoritmo que, dado uma String s como entrada, printa a mesma String ao contrário.  
 Ex.: **Input:** recursividade  
      **Output:** edadivisrucer
 
